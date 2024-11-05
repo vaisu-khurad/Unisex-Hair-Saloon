@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisex Hair Saloon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        header {
+            height: 100vh;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        header .title {
+            font-size: 3em;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .services .card {
+            transition: transform 0.3s;
+        }
+        .services .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container text-center">
+            <h1 class="title">Welcome to Unisex Hair Saloon</h1>
+            <p class="lead">Your beauty is our duty</p>
+            <a href="#services" class="btn btn-primary mt-4">Explore Services</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Unisex Hair Saloon</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="sharePage()" title="Share this page">
+                            <i class="fas fa-share-alt"></i> Share
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container text-center">
+            <h2 class="mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="haircut.jpg" class="card-img-top" alt="Haircut">
+                        <div class="card-body">
+                            <h5 class="card-title">Haircuts</h5>
+                            <p class="card-text">Modern styles for all ages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="styling.jpg" class="card-img-top" alt="Styling">
+                        <div class="card-body">
+                            <h5 class="card-title">Styling</h5>
+                            <p class="card-text">Unique looks to suit your personality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="haircolor.jpg" class="card-img-top" alt="Coloring">
+                        <div class="card-body">
+                            <h5 class="card-title">Coloring</h5>
+                            <p class="card-text">Creative colors to match your style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p class="lead">At Unisex Hair Saloon, we offer expert styling services for men and women. Our team is here to make you look and feel your best.</p>
+        </div>
+    </section>
+
+    <!-- Salon Details Section -->
+    <section id="details" class="section">
+        <div class="container text-center">
+            <h2>Salon Details</h2>
+            <p class="lead">Check out our hours and additional information.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</li>
+                        <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Additional Information</h5>
+                    <p>We accept both appointments and walk-ins. To ensure availability, we recommend booking an appointment in advance.</p>
+                    <p><strong>Location:</strong> 1234 Beauty St., Hair City, HC 56789</p>
+                    <p><strong>Payment Methods:</strong> Cash, Credit/Debit Card, Mobile Payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p class="lead">Get in touch for appointments and inquiries</p>
+            <p><strong>Email:</strong> info@unisexhairsaloon.com</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Unisex Hair Saloon. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Unisex Hair Saloon',
+                    text: 'Check out Unisex Hair Saloon for great styling!',
+                    url: window.location.href
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(console.error);
+            } else {
+                alert('Share feature is not supported in your browser.');
+            }
+        }
+    </script>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
